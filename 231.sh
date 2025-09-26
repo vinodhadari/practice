@@ -1,7 +1,7 @@
 #!/bin/bash
 
 start_time=$(date +%s)
-sleep =30
+sleep 30
 
 close_time=$(date +%s)
 
