@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo enter the PAN number
-read $PAN number
-echo "Pan entered is "$Pan number
+read $PAN_number
+echo "Pan entered is "$Pan_number
