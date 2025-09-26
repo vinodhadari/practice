@@ -14,7 +14,7 @@
 # "Listing files in current directory:"
 # "use date -d @1737954936 to change to date day time format from epoch time"
 
-
+ls -l
 START_TIME=$(date +%s)
 
 sleep 10
@@ -23,4 +23,4 @@ END_TIME=$(date +%s)
 
 TOTAL_TIME=$(($END_TIME-$START_TIME))
 
-# "Script executed in: $TOTAL_TIME Seconds"
+echo "Script executed in: $TOTAL_TIME Seconds"
