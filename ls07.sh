@@ -29,3 +29,4 @@ echo "Script executed in: $TOTAL_TIME Seconds"
 # "Current date and time (default): $(date)"
 # "Current date and time (epoch seconds): $(date +%s)"
 # sleep =10 is an invalid command it should be sleep 10
+# date --help to see all options
