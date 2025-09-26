@@ -14,7 +14,7 @@
 # "Listing files in current directory:"
 # "use date -d @1737954936 to change to date day time format from epoch time"
 
-ls -l
+ls -l #just ramdom command to take some time
 START_TIME=$(date +%s)
 
 sleep 10
