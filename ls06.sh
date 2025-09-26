@@ -26,3 +26,6 @@ echo "Operating System is: $OS"
 # enveronment variables only run for current session, if we open new terminal they will not be available
 # to make them permanent we should add them to .bashrc or .bash_profile file in home directory
 # we can use env command to see all environment variables
+#if we want access enveronment file in whole sesson use run sourse ls06.sh or . ls06.sh
+#you can go to vim .bashrc file and add export COURSE="AWS Dev Practice" before last line to make it permanent
+#after adding to .bashrc file run source .bashrc to make it effective in current
