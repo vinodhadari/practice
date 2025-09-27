@@ -2,6 +2,11 @@
 #!/bin/bash
 
 # type some manes or anything for $@ and $*
+# | Variable | Quoted `"..."`                 | Effect                               |
+# | -------- | ------------------------------ | ------------------------------------ |
+# | `"$@"`   | `"one"` `"two three"` `"four"` | Each argument preserved individually |
+# | `"$*"`   | `"one two three four"`         | Everything combined into one string  |"
+
 echo "All variables passed to the script: $@"
 echo "All variables passed to the script: $*"
 echo "Script name: $0"
