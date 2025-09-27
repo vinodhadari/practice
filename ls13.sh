@@ -1,10 +1,10 @@
-#!bin/bash/
+#!/bin/bash
 
-echo " Enter the number beloe "
+echo "Enter the number below"
 read NUMBER
 
-if [ ( $NUMBER % 2 ) -eq 0 ] ; then
-    echo :"Given number $NUMBER is even number "
+if [ $((NUMBER % 2)) -eq 0 ] ; then
+    echo "Given number $NUMBER is even number"
 else 
-echo "  Given number $NUMBER is odd "
+    echo "Given number $NUMBER is odd"
 fi
