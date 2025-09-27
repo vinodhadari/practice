@@ -1,6 +1,6 @@
 #!/bin/basg/
 
-USERID=$(id -u%)
+USERID=$(id -u)
 
 if [ $USERID -ne 0 ] ; then
     echo "ERROR:: you must run with root user "
