@@ -1,10 +1,15 @@
-#!/bin/bash
+#!/bin/basg/
 
-echo "Enter the number below"
-read NUMBER
+USERID=(id -u%)
 
-if [ $((NUMBER % 2)) -eq 0 ] ; then
-    echo "Given number $NUMBER is even number"
-else 
-    echo "Given number $NUMBER is odd"
+if [ $USERID -ne 0 ] ; then
+    echo "ERROR:: you must run with root user "
+    exit 1
+fi
+
+dnf install mysqld -y
+
+if [ $? ne 0 ]: then
+    echo "ERROR:: mysql installation failed"
+    exit 1
 fi
