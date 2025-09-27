@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # everything in shell is considerd as string
+# NO data types in linux
 NUMBER1=100
 NUMBER2=200
 NAME=DevOps
