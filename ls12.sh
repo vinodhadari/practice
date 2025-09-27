@@ -17,6 +17,7 @@ if [ $USERID -ne 0 ]; then
 dnf install mysql -y
 
 if [ $? -ne 0 ]; then # $? -> Exit status of the last command that was run
+                      # if put : insted of ; else statement wont work
     echo "ERROR:: Installing MySQL is failure"
     exit 1
 else
