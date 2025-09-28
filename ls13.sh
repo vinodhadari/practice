@@ -1,7 +1,7 @@
 #!/bin/bash/
 
 USERID=$(id -u)
-
+# dnf remove mysql mysql-server
 if [ $USERID -ne 0 ]; then
     echo "ERROR ::change to root user"
     exit 1
