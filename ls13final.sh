@@ -21,6 +21,8 @@ VALIDATE $? "mysql"
 #   or
 #mysql=$2
 #VALIDATE $? "mysql" ,after rumming the code it onle show is 100
+#dnf list installed mysql
+#echo $? for installation status 0 if installed 
 
 dnf install nginx -y
 VALIDATE $? "nginx"
