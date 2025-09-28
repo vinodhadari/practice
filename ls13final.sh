@@ -12,7 +12,7 @@ VALIDATE() {
             echo "error ::$2 installation failed "
             exit 1
         else 
-            echo " $2 is 100 correct "
+            echo " Installing $2 is SUCCESS "
         fi
 }
 dnf install mysql -y
@@ -20,7 +20,7 @@ VALIDATE $? "mysql"
 # VALIDATE $? "mysql"
 #   or
 #mysql=$2
-#VALIDATE $? "mysql"
+#VALIDATE $? "mysql" ,after rumming the code it onle show is 100
 
 dnf install nginx -y
 VALIDATE $? "nginx"
