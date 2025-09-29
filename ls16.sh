@@ -8,7 +8,7 @@ Y="\e[33m"
 N="\e[0m"
 
 LOGS_FOLDER="/var/log/shell-script"
-SCRIPT_NAME=$( echo $0 | cut -d "." -f1 )
+SCRIPT_NAME=$( echo $0 | cut -d "." -f1 ) # $0 script name ,echo is used to prin the name
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log" # /var/log/shell-script/16-logs.log
 
 mkdir -p $LOGS_FOLDER # -p is given because if that directory is there it will create or  else it will skip
@@ -19,6 +19,12 @@ if [ $USERID -ne 0 ]; then
     echo "ERROR:: Please run this script with root privelege"
     exit 1 # failure is other than 0
 fi
+# suppose 
+# ls -l > output.log ->saves the output to that file
+# lsadasdf -l > output.log dispite the invalid command , "-bash: lsadasdf: command canot found" this will store in the output.log file
+# 1 or 2 before >output.log mean ( ls -l 1 > output.log ,ls -l 2 > output.log ) 1-. sussess , 2 -> failure
+# use & ( lsadasdf -l &> output.log) if u dont know fail or pass
+#normally if u run multiple commands everytime outpul will be replaced use >> in place of > to append
 
 VALIDATE(){ # functions receive inputs through args just like shell script args
     if [ $1 -ne 0 ]; then
