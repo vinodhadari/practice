@@ -39,3 +39,4 @@ if [ $? -ne 0 ]; then
     VALIDATE $? "python3"
 else
     echo -e " python is already exist ....$Y SKIPING $N "
+fi
